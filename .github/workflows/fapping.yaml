@@ -28,7 +28,7 @@ jobs:
         id: build-app
         uses: flipperdevices/flipperzero-ufbt-action@v0.1.4
         with:
-          sdk-branch: ${{ github.ref == 'refs/heads/dev' && 'dev' || '' }}
+          sdk-branch:  ${{ github.ref == 'refs/heads/master' ? 'release':'dev' }}
          
       - name: Upload app artifacts
         uses: actions/upload-artifact@v3
