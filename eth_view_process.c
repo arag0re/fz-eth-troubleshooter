@@ -11,6 +11,8 @@
 
 #define TAG "EthView"
 
+
+
 EthViewProcess* ethernet_view_process_malloc(EthWorkerProcess type, EthernetSaveConfig* config) {
     EthViewProcess* evp = malloc(sizeof(EthViewProcess));
     evp->type = type;
